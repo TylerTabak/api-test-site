@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<title>3 File Site </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://kit.fontawesome.com/4f00e69e22.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div>
+		<span id="main-nav"><span>Page 1</span><span>Page 2</span><span>Page 3</span></span>
+	</div>
+	<h1 id="str"></h1>
+	<h2 class='h2-progress'><u>Progress Bar</u><br> <progress id="counter" value="0" max="50"></progress></h2>
+	<section id="content">
+		<div class="row row-1">
+            <span class="column column-1" onclick="initClock()">
+                <div class="unselectable counter-button">
+                    Live Timer <br> Click Me
+                </div>
+			</span>
+			<span class="column column-2">
+				<div class="unselectable counter-button" onclick="addition()">
+					+1
+				</div>
+				<div class="unselectable counter-button" onclick="subtraction()">
+					-1
+				</div>
+                <div id="progress-status" class="unselectable counter-button" onclick="cycle()">
+					Start Progress Bar
+				</div>
+				<span>Count: <span id="loopCounter">0</span></span>
+			</span>
+		</div>
+		<div class="row row-2">
+			<span class="column column-1">
+				<div id="timedate">
+					<a id="mon">Month</a>
+					<a id="d">Day</a>
+					<a id="y">Year</a><br />
+					<a id="h">0</a>
+					<a id="m">0</a>
+					<a id="s">0</a>
+				  </div>
+			</span>
+			<span class="column column-2">
+                <details>
+                    <summary class="unselectable">Click To Open</summary>
+                    Hey, I am natively collapsable section. My content remains hidden till you click on summary.
+                  </details>
+
+			</span>
+		</div>
+		<div class="row row-3">
+			<span class="column column-1">
+				<div id="api-result">
+					Hi
+				</div>
+				<div id="api-picture">
+
+				</div>
+			</span>
+			<span class="column column-2">
+				<div id="next-pokemon" class="unselectable counter-button">
+					Next Pokemon
+				</div>
+			</span>
+		</div>
+		<div class="row row-4">
+			<span class="column column-1">
+				<div class="icon">
+					<i class="fab fa-vuejs fa-5x"></i>
+				</div>
+				<div class="icon">
+					<i class="fab fa-github fa-5x"></i>
+				</div>
+				<div class="icon">
+					<i class="fab fa-html5 fa-5x"></i>
+				</div>
+				<div class="icon">
+					<i class="fab fa-php fa-5x"></i>
+				</div>
+				<div class="icon">
+					<i class="fab fa-css3-alt fa-5x"></i>
+				</div>
+				<div class="icon">
+					<i class="fab fa-laravel fa-5x"></i>
+				</div>
+				<div class="icon">
+					<i class="fab fa-js-square fa-5x"></i>
+				</div>
+				<div class="icon">
+					<i class="fab fa-python fa-5x"></i>
+				</div>
+				<div class="icon">
+					<i class="fab fa-shopify fa-5x"></i>
+				</div>
+				<div class="icon">
+					<i class="fab fa-wordpress fa-5x"></i>
+				</div>
+				<div class="icon">
+					<i class="fab fa-node fa-5x"></i>
+				</div>
+			</span>
+		</div>
+		<div class="row row-4">
+			<div id="joke-container">
+				<div id="joke-setup" class="column-alt"></div>
+				<div id="joke-delivery" class="column-alt"></div>
+				<br>
+				<div id="joke-button" class="unselectable counter-button">
+					Tell me a joke!
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>
