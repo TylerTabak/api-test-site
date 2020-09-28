@@ -85,7 +85,7 @@ function nextPokemon() {
 function getJoke() {
   document.getElementById('joke-setup').innerHTML = "Fetching Joke..."
   document.getElementById('joke-delivery').innerHTML = " "
-  fetch('https://sv443.net/jokeapi/v2/joke')
+  fetch('https://sv443.net/jokeapi/v2/joke/any')
   .then(response => response.json())
   .then(data => {
     console.log(data)
